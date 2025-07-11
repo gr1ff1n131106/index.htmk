@@ -488,25 +488,6 @@
         </div>
     </footer>
 
-    <script>
-    // Dropdown click to open/close
-    document.querySelectorAll('.dropbtn').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        // Close other dropdowns
-        document.querySelectorAll('.dropdown').forEach(d => {
-          if (d !== this.parentElement) d.classList.remove('open');
-        });
-        // Toggle this dropdown
-        this.parentElement.classList.toggle('open');
-      });
-    });
-    // Close dropdown if clicked outside
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.dropdown')) {
-        document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
-      }
-    });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
